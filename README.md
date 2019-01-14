@@ -3,13 +3,17 @@
 ROSを使ったウェブにデータを飛ばすプログラム及び、パブリッシャ、サブスクライバによるデータ通信を行う
 
 ## Demo
-
+・Webに送るプログラム  
+https://youtu.be/gw1JCfh02Zw  
+  
+・パブリッシャ―、サブスクライバによる通信の確認   
+https://youtu.be/g7U0imOXgYk  
 
 
 ## Description
 
 ROSを使いweb上に白い大きな文字を送ることができる。  
-また、パブリッシャ、サブスクライバにより変動する数字を送ることができる。  
+また、パブリッシャからサブスクライバに変動する数字を送ることができる。  
 使用したもの  
 ・ノートPC(Windows10)  
 ・VirtualBox  
@@ -38,6 +42,10 @@ http://{IPアドレス}:8000
 roscore
 rosrun mypkg count.py
 rosrun mypkg twice.py
+```
+次のコマンドで送れているかの確認
+```
+rostopic echo /twice
 ```
 
 ## Licence
